@@ -1,6 +1,10 @@
 {
-  "name": "oasisproxy",
-  "version": "0.0.0",
+  "name": "datong-proxy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marchFantasy/datong-proxy.git"
+  },
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {

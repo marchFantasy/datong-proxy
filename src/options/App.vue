@@ -183,7 +183,7 @@ function showSyncConflictModal(desc) {
 }
 
 function toGithub() {
-  window.open('https://github.com/oasis-proxy/oasis-proxy', '_blank')
+  window.open('https://github.com/marchFantasy/datong-proxy', '_blank')
 }
 
 provide('handleNewConfig', handleNewConfig)

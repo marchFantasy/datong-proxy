@@ -60,23 +60,18 @@ function toPath(path) {
 }
 
 function toGithubWiki() {
-  window.open('https://github.com/oasis-proxy/oasis-proxy/wiki', '_blank')
+  window.open('https://github.com/marchFantasy/datong-proxy/wiki', '_blank')
 }
 </script>
 <template>
   <div class="w-100 mb-4 d-flex justify-content-center">
-    <img
+    <!-- <img
       v-show="storeConfig.computedTheme == 'dark'"
       src="/img/banner-dark.png"
       alt=""
       style="width: 193px"
-    />
-    <img
-      v-show="storeConfig.computedTheme != 'dark'"
-      src="/img/banner-light.png"
-      alt=""
-      style="width: 193px"
-    />
+    /> -->
+    <img src="/img/banner.png" alt="" style="width: 65px" />
   </div>
   <div class="card">
     <div class="card-header hstack">

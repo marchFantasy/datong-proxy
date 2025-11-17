@@ -1,10 +1,10 @@
 {
   "ext_name": {
-    "message": "Oasis Proxy",
+    "message": "Datong Proxy",
     "description": ""
   },
   "ext_desc": {
-    "message": "Oasis Proxy is a proxy management extension tool similar to SwitchyOmega, supporting Manifest v3.",
+    "message": "Datong Proxy is a proxy management extension tool similar to SwitchyOmega, supporting Manifest v3.",
     "description": ""
   },
   "btn_label_save": {

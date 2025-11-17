@@ -1,10 +1,10 @@
 {
   "ext_name": {
-    "message": "Oasis Proxy",
+    "message": "Datong Proxy",
     "description": ""
   },
   "ext_desc": {
-    "message": "Oasis Proxy是一款类似于SwitchyOmega，支持Manifest v3的代理管理扩展工具。",
+    "message": "Datong Proxy是一款类似于SwitchyOmega，支持Manifest v3的代理管理扩展工具。",
     "description": ""
   },
   "btn_label_save": {

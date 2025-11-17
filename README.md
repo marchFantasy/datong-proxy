@@ -1,6 +1,6 @@
-# OasisProxy
+# DatongProxy
 
-OasisProxy is a browser proxy configuration extension. A substitute of SwitchOmega for Manifest v3
+Datong-Proxy is a browser proxy configuration extension. A substitute of SwitchOmega for Manifest v3
 
 ## Highlights
 
@@ -15,15 +15,15 @@ Only supports Chrome browser, Firefox is not being considered for now.
 
 ## Store Release
 
-Oasis is now published in the Microsoft Edge Add-ons Store and the Chrome Web Store.
+Datong-Proxy is now published in the Microsoft Edge Add-ons Store and the Chrome Web Store.
 
-[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/canfhmdhlkplkkpglgleikdjipcokjof)](https://chromewebstore.google.com/detail/oasis-proxy/canfhmdhlkplkkpglgleikdjipcokjof)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/canfhmdhlkplkkpglgleikdjipcokjof)](https://chromewebstore.google.com/detail/datong-proxy/canfhmdhlkplkkpglgleikdjipcokjof)
 
 [![Microsoft Edge Add-ons Store](https://img.shields.io/badge/edge%20addons%20store-v1.0.x%20latest-blue)](https://microsoftedge.microsoft.com/addons/detail/nijeodiignggdicdeompofjlaikjobjf)
 
 ## ChangeLogs
 
-[ChangeLogs](https://github.com/oasis-proxy/oasis-proxy/blob/main/changelogs.md)
+[ChangeLogs](https://github.com/marchFantasy/datong-proxy/blob/main/changelogs.md)
 
 ## How to build/debug:
 
@@ -43,11 +43,11 @@ https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world?hl
 
 ## WIKI & FAQ
 
-FAQ WIKI: [FAQ](https://github.com/oasis-proxy/oasis-proxy/wiki/FAQ)
+FAQ WIKI: [FAQ](https://github.com/marchFantasy/datong-proxy/wiki/FAQ)
 
 ## Privacy Policy
 
-Oasis-Proxy WIKI: [Privacy Policy](https://github.com/oasis-proxy/oasis-proxy/wiki/Privacy)
+Datong-Proxy WIKI: [Privacy Policy](https://github.com/marchFantasy/datong-proxy/wiki/Privacy)
 
 ## Project Reference
 
