@@ -67,16 +67,23 @@ async function loadQuickAdd() {
 
   const requestSession = await Browser.Storage.getSession(activeTabId)
 
-  Object.keys(requestSession[activeTabId]).forEach((hostname) => {
-    if (requestSession[activeTabId][hostname].status == 'Error') {
-      const suffix = getSuffix(hostname)
+  if (requestSession[activeTabId]) {
+    Object.keys(requestSession[activeTabId]).forEach((hostname) => {
+      // 检查请求状态是否为加载中或网络错误
+      if (
+        requestSession[activeTabId][hostname].status == 'Loading' ||
+        (requestSession[activeTabId][hostname].status &&
+          requestSession[activeTabId][hostname].status.startsWith('net::'))
+      ) {
+        const suffix = getSuffix(hostname)
 
-      if (!domains.value.includes(suffix)) {
-        domains.value.push(suffix)
-        checkedDomains.value.push(suffix)
+        if (!domains.value.includes(suffix)) {
+          domains.value.push(suffix)
+          checkedDomains.value.push(suffix)
+        }
       }
-    }
-  })
+    })
+  }
 }
 
 async function submit() {

@@ -92,7 +92,10 @@ async function updateNavList() {
     quickEnabled.value = false
   } else {
     Object.keys(requestSession[activeTabId]).forEach((key) => {
-      if (requestSession[activeTabId][key].status == 'Error') {
+      if (
+        requestSession[activeTabId][key].status == 'Error' ||
+        requestSession[activeTabId][key].status == 'Loading'
+      ) {
         quickEnabled.value = true
       }
     })
