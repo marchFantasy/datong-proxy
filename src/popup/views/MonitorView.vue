@@ -83,13 +83,33 @@ async function copyToClipboard(text) {
             >
           </td>
           <td>
-            <span
+            <div
               class="truncate-text d-inline-block text-nowrap cursor-point"
               style="width: 120px"
               :title="item.ip"
               @click="copyToClipboard(item.ip)"
-              >{{ iptags[item.ip] ? iptags[item.ip] : item.ip }}</span
             >
+              <span
+                v-if="iptags[item.ip]"
+                class="badge"
+                style="
+                  background-color: var(--bg-tertiary);
+                  color: var(--text-primary);
+                "
+              >
+                {{ iptags[item.ip] }}
+              </span>
+              <span
+                v-else-if="['127.0.0.1', '::1', 'localhost'].includes(item.ip)"
+                class="badge"
+                style="background-color: var(--accent-primary); color: white"
+              >
+                Proxy
+              </span>
+              <span v-else>
+                {{ item.ip }}
+              </span>
+            </div>
           </td>
         </tr>
       </tbody>
