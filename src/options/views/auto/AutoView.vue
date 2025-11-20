@@ -30,7 +30,7 @@ const toast = instance?.appContext.config.globalProperties.$toast
 
 const mergeAutoRulesModal = ref(null)
 
-const tagColor = ref('#3498db')
+const tagColor = ref('#2563eb')
 const localRuleList = ref([])
 const rejectRuleList = ref([])
 const siteRuleList = ref([])
@@ -172,7 +172,7 @@ async function openMergeRulesDialog() {
 }
 
 function resetData() {
-  tagColor.value = '#3498db'
+  tagColor.value = '#2563eb'
   localRuleList.value = []
   rejectRuleList.value = []
   defaultProxy.value = 'direct'

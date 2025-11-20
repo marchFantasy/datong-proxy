@@ -158,7 +158,7 @@ function toGithubWiki() {
               ><span>{{ decodeURIComponent(item.name) }}</span
               ><span
                 v-if="storeStatus.activeProxyKey == 'proxy_' + item.name"
-                class="badge rounded-pill bg-info ms-3"
+                class="badge rounded-pill bg-primary ms-3"
               >
                 {{ Browser.I18n.getMessage('badge_label_using') }}
               </span>
@@ -203,7 +203,7 @@ function toGithubWiki() {
               ><span>{{ decodeURIComponent(item.name) }}</span
               ><span
                 v-if="storeStatus.activeProxyKey == 'proxy_' + item.name"
-                class="badge rounded-pill bg-info ms-3"
+                class="badge rounded-pill bg-primary ms-3"
               >
                 {{ Browser.I18n.getMessage('badge_label_using') }}
               </span>
@@ -230,7 +230,7 @@ function toGithubWiki() {
               <span>{{ decodeURIComponent(item.name) }}</span
               ><span
                 v-if="storeStatus.activeProxyKey == 'proxy_' + item.name"
-                class="badge rounded-pill bg-info ms-3"
+                class="badge rounded-pill bg-primary ms-3"
               >
                 {{ Browser.I18n.getMessage('badge_label_using') }}
               </span>

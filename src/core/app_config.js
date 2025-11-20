@@ -242,7 +242,7 @@ function transformTagColor(appConfig) {
       return
     }
     const resObj = JSON.parse(JSON.stringify(appConfig[key]))
-    resObj.tagColor = '#3498db'
+    resObj.tagColor = '#2563eb'
 
     updatedProxyConfigList.push({ [key]: resObj })
   })

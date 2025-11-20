@@ -20,7 +20,7 @@ const instance = getCurrentInstance()
 const confirmModal = instance?.appContext.config.globalProperties.$confirm
 const toast = instance?.appContext.config.globalProperties.$toast
 
-const tagColor = ref('#3498db')
+const tagColor = ref('#2563eb')
 const fallbackProxy = ref({
   scheme: 'direct',
   host: '',
@@ -95,7 +95,7 @@ async function load(proxyKey) {
 }
 
 function resetData() {
-  tagColor.value = '#3498db'
+  tagColor.value = '#2563eb'
   fallbackProxy.value = {
     scheme: 'direct',
     host: '',

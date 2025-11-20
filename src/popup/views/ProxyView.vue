@@ -174,9 +174,10 @@ function goToEditPage(name) {
 </template>
 <style scoped>
 .icon-btn {
-  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 .nav-item:hover .icon-btn {
-  display: block;
+  opacity: 1;
 }
 </style>

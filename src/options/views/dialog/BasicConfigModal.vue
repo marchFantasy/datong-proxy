@@ -227,7 +227,7 @@ async function handleSubmitCopyConfige(result) {
 
 async function handleSubmitNew() {
   const encodeName = encodeURIComponent(name.value)
-  const proxyConfig = createProxy(encodeName, '#3498db', mode.value)
+  const proxyConfig = createProxy(encodeName, '#2563eb', mode.value)
   if (proxyConfig == -1) {
     toast.warning(
       `${name.value} ${Browser.I18n.getMessage('desc_save_failed')}`

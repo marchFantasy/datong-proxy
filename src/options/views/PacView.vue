@@ -15,7 +15,7 @@ const handleCopy = inject('handleCopy')
 const handleDelete = inject('handleDelete')
 const showUploadConflictModal = inject('showUploadConflictModal')
 
-const tagColor = ref('#3498db')
+const tagColor = ref('#2563eb')
 const urlValid = ref(true)
 const pacRule = ref({
   url: '',
@@ -51,7 +51,7 @@ async function load(proxyKey) {
 }
 
 function resetData() {
-  tagColor.value = '#3498db'
+  tagColor.value = '#2563eb'
   pacRule.value = {
     url: '',
     urlUpdatedAt: '',

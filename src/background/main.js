@@ -33,7 +33,7 @@ chrome.runtime.onInstalled.addListener(async ({ reason }) => {
     await convertToNewVersionConfig()
 
     const result = await chrome.storage.local.get()
-    let color = '#3498db'
+    let color = '#2563eb'
     if (result.status_proxyKey == undefined) {
       color = '#fff'
     } else {
@@ -77,7 +77,7 @@ chrome.runtime.onStartup.addListener(async () => {
     ? await addAllContextMenus()
     : await removeAllContextMenus()
 
-  let color = '#3498db'
+  let color = '#2563eb'
   if (
     !(
       result.status_proxyKey == undefined ||

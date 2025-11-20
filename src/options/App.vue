@@ -196,7 +196,7 @@ provide('showSyncConflictModal', showSyncConflictModal)
 
 <template>
   <div
-    class="container-xxl shadow card p-4 border-light w-100 h-100 px-4"
+    class="container-xxl shadow card p-4 w-100 h-100 px-4"
     style="min-height: 720px"
   >
     <div class="row gy-4 w-100 h-100 gx-5">
