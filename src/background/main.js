@@ -32,15 +32,7 @@ chrome.runtime.onInstalled.addListener(async ({ reason }) => {
   } else if (reason === 'update') {
     await convertToNewVersionConfig()
 
-    const result = await chrome.storage.local.get()
-    let color = '#2563eb'
-    if (result.status_proxyKey == undefined) {
-      color = '#fff'
-    } else {
-      color = result[result.status_proxyKey].tagColor
-    }
-    await chrome.action.setBadgeBackgroundColor({ color: color })
-    clearTabBadgeText()
+    await updateBadgeColor()
   }
   chrome.storage.session.clear()
   const result = await chrome.storage.local.get([
@@ -77,17 +69,7 @@ chrome.runtime.onStartup.addListener(async () => {
     ? await addAllContextMenus()
     : await removeAllContextMenus()
 
-  let color = '#2563eb'
-  if (
-    !(
-      result.status_proxyKey == undefined ||
-      result[result.status_proxyKey].tagColor == undefined
-    )
-  ) {
-    color = result[result.status_proxyKey].tagColor
-  }
-  await chrome.action.setBadgeBackgroundColor({ color: color })
-  clearTabBadgeText()
+  await updateBadgeColor()
 })
 
 /* section: storage event */
@@ -156,5 +138,14 @@ chrome.proxy.onProxyError.addListener((details) => {
   log.error('onProxyError: ', details)
 })
 
-// todo why
-// initContextMenus()
+const updateBadgeColor = async () => {
+  const result = await chrome.storage.local.get()
+  let color = '#2563eb'
+  if (result.status_proxyKey == undefined) {
+    color = '#fff'
+  } else {
+    color = result[result.status_proxyKey].tagColor
+  }
+  await chrome.action.setBadgeBackgroundColor({ color: color })
+  clearTabBadgeText()
+}

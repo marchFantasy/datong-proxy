@@ -4,7 +4,6 @@ import PopoverTips from '@/components/PopoverTips.vue'
 import { useConfigStore } from '@/options/stores/config'
 import Browser from '@/Browser/main'
 import { getNextLocalVersion } from '@/core/version_control.js'
-import { log } from '@/core/utils.js'
 import {
   addQuickAddSiteRulesContextMenus,
   removeQuickAddSiteRulesContextMenus
