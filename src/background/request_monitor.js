@@ -95,8 +95,17 @@ const monitorBeforeRedirect = async (details) => {
   if (!Object.keys(requestSession).includes(sessionTabId)) {
     requestSession[sessionTabId] = {}
   }
-  if (requestSession[sessionTabId][getHostName(details.url)].ip == 'Loading') {
-    requestSession[sessionTabId][getHostName(details.url)] = {
+  // 检查 hostname 对应的对象是否存在,避免访问 undefined 的属性
+  const hostname = getHostName(details.url)
+  if (!requestSession[sessionTabId][hostname]) {
+    // 如果不存在,创建默认的 Loading 状态
+    requestSession[sessionTabId][hostname] = {
+      ip: 'Loading',
+      status: 'Loading'
+    }
+  }
+  if (requestSession[sessionTabId][hostname].ip == 'Loading') {
+    requestSession[sessionTabId][hostname] = {
       ip: 'Redirect',
       status: 'Redirect'
     }
